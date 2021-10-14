@@ -16,6 +16,6 @@ class Netmask < Formula
   end
 
   test do
-    assert_equal "10.0.0.0/23", shell_output("#{bin}/netmask 10.0.0.0:10.0.1.255").strip
+    assert_equal "10.0.0.0/22", shell_output("#{bin}/netmask 10.0.0.0:10.0.3.255").strip
   end
 end
